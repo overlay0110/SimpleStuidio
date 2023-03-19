@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="vm"
+            type="com.overlay0110.simplestuidio.main.MainActivity" />
+    </data>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".main.MainActivity"
+        android:background="@color/custom_black">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id='@+id/refresh_layout'>
+
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:padding="0dp"
+            android:paddingTop="0dp"
+            android:visibility="visible"
+            >
+
+            <GridLayout
+                android:id="@+id/grid_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:rowCount="3"
+                android:columnCount="3"
+                android:orientation="horizontal"
+                >
+
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:src="@drawable/a_icon2"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"
+                    app:riv_corner_radius="20dp"
+                    app:riv_border_width="0dp" />
+
+
+            </GridLayout>
+
+        </ScrollView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/no_photo_alert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/baseline_no_photography_24"/>
+
+            <TextView
+                android:textColor="#fff"
+                android:textSize="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Photos"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+        </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:id="@+id/permissionText"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Storage Permission Required"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ok"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/permissionText"
+            android:visibility="gone"
+            android:onClick="@{() -> vm.onBtnClick(999999999)}"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</layout>

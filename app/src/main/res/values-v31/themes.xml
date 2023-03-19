@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.SimpleStuidio" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/custom_pink</item>
+
+        <item name="android:windowSplashScreenBackground">@color/custom_black</item>
+
+        <item name="android:statusBarColor">@color/custom_pink</item>
+    </style>
+
+</resources>
