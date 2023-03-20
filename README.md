@@ -1,6 +1,6 @@
 # SimpleStuidio
 
-효과, 필터, 자르기만 적용한 사진 편집앱이며 전에 외주로 진행한 이미지에디터 프로젝트는 저작권 문제로 사용못하기 때문에 간단하게 새로 만든 이미지 에디터입니다.
+효과, 필터, 자르기만 적용한 사진 편집앱이며 이전에 외주로 진행한 이미지에디터 프로젝트는 저작권 문제로 개인계정으로 못올리기 때문에 간단하게 새로 구축한 이미지 에디터입니다.
 
 <a href="https://play.google.com/store/apps/details?id=com.overlay0110.simplestuidio"><img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" height="70"></a>
 
